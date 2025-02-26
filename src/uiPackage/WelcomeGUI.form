@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="uiPackage.WelcomeGUI">
+  <grid id="cbd77" binding="contentPane" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="10" left="10" bottom="10" right="10"/>
+    <constraints>
+      <xy x="48" y="54" width="460" height="800"/>
+    </constraints>
+    <properties>
+      <background color="-10654"/>
+      <maximumSize width="460" height="800"/>
+      <minimumSize width="460" height="800"/>
+      <preferredSize width="460" height="800"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="e3588" binding="basePanel" layout-manager="GridLayoutManager" row-count="4" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-10654"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <grid id="13687" binding="topPanel" layout-manager="GridLayoutManager" row-count="3" column-count="6" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-10654"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="91648" class="javax.swing.JButton" binding="quitButton">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-1"/>
+                  <borderPainted value="false"/>
+                  <contentAreaFilled value="false"/>
+                  <defaultCapable value="false"/>
+                  <icon value="images/icons/icons8-quit-32.png"/>
+                  <label value=""/>
+                  <margin top="0" left="0" bottom="0" right="0"/>
+                  <requestFocusEnabled value="false"/>
+                  <rolloverEnabled value="true"/>
+                  <rolloverIcon value="images/icons/icons8-quit-32-dark.png"/>
+                  <text value=""/>
+                  <toolTipText value="Exit Game"/>
+                  <visible value="true"/>
+                </properties>
+              </component>
+              <component id="eb22a" class="javax.swing.JButton" binding="soundButton">
+                <constraints>
+                  <grid row="1" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-10654"/>
+                  <borderPainted value="false"/>
+                  <defaultCapable value="false"/>
+                  <icon value="images/icons/icons8-music-note-64.png"/>
+                  <requestFocusEnabled value="false"/>
+                  <rolloverIcon value="images/icons/icons8-music-note-64-dark.png"/>
+                  <selected value="false"/>
+                  <text value=""/>
+                  <toolTipText value="Music On/OFF"/>
+                </properties>
+              </component>
+              <hspacer id="330ee">
+                <constraints>
+                  <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+              <hspacer id="3bcb3">
+                <constraints>
+                  <grid row="1" column="4" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+              <hspacer id="f1caa">
+                <constraints>
+                  <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+              <hspacer id="f9a18">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+              <vspacer id="764ba">
+                <constraints>
+                  <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+              <vspacer id="5f5dd">
+                <constraints>
+                  <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+              <component id="5a5ab" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <foreground color="-10654"/>
+                  <text value="s"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="22037" binding="tittlePanel" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-4855081"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="a1913" class="javax.swing.JLabel" binding="tittle">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <horizontalAlignment value="0"/>
+                  <horizontalTextPosition value="0"/>
+                  <icon value="images/parrot/coverTest.png"/>
+                  <iconTextGap value="0"/>
+                  <text value=""/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="8b4de" binding="buttonsPanel" layout-manager="GridLayoutManager" row-count="1" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-10654"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="ef229" class="javax.swing.JButton" binding="quickButton">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-1"/>
+                  <defaultCapable value="false"/>
+                  <icon value="images/icons/icons8-quick-64.png"/>
+                  <iconTextGap value="6"/>
+                  <inheritsPopupMenu value="false"/>
+                  <requestFocusEnabled value="false"/>
+                  <text value=""/>
+                  <toolTipText value="Quick Game"/>
+                </properties>
+              </component>
+              <component id="ed187" class="javax.swing.JButton" binding="newButton">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-1"/>
+                  <defaultCapable value="false"/>
+                  <icon value="images/icons/icons8-new-64.png"/>
+                  <iconTextGap value="6"/>
+                  <requestFocusEnabled value="false"/>
+                  <text value=""/>
+                  <toolTipText value="New Game"/>
+                </properties>
+              </component>
+              <component id="47b43" class="javax.swing.JButton" binding="loadButton">
+                <constraints>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-1"/>
+                  <defaultCapable value="false"/>
+                  <icon value="images/icons/icons8-upload-64.png"/>
+                  <label value=""/>
+                  <requestFocusEnabled value="false"/>
+                  <text value=""/>
+                  <toolTipText value="Load Game"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="3ccd8" binding="optionsPanel" layout-manager="CardLayout" hgap="0" vgap="0">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-21589"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <grid id="5a4b" binding="quickGamePanel" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <card name="quickCard"/>
+                </constraints>
+                <properties>
+                  <background color="-21589"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="5f387" class="javax.swing.JButton" binding="quickPlayButton">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-1"/>
+                      <borderPainted value="true"/>
+                      <contentAreaFilled value="true"/>
+                      <icon value="images/icons/icons8-play-32.png"/>
+                      <iconTextGap value="6"/>
+                      <requestFocusEnabled value="false"/>
+                      <text value=""/>
+                      <toolTipText value="Play"/>
+                    </properties>
+                  </component>
+                  <component id="838a5" class="javax.swing.JTextPane" binding="quickGamePerfectForTextPane" default-binding="true">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="50"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <background color="-21589"/>
+                      <caretColor color="-21589"/>
+                      <font name="Maiandra GD" size="16" style="0"/>
+                      <foreground color="-1"/>
+                      <margin top="30" left="40" bottom="1" right="10"/>
+                      <text value="Quick Game, perfect for testing, time past very fast"/>
+                    </properties>
+                  </component>
+                  <vspacer id="30177">
+                    <constraints>
+                      <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </vspacer>
+                </children>
+              </grid>
+              <grid id="1a978" binding="newGamePanel" layout-manager="GridLayoutManager" row-count="3" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <card name="newCard"/>
+                </constraints>
+                <properties>
+                  <background color="-21589"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="3fbc3" class="javax.swing.JTextArea" binding="normalGameModeChooseTextArea" default-binding="true">
+                    <constraints>
+                      <grid row="0" column="2" row-span="1" col-span="2" vsize-policy="6" hsize-policy="6" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="50"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <background color="-21589"/>
+                      <font name="Maiandra GD" size="16"/>
+                      <foreground color="-1"/>
+                      <lineWrap value="false"/>
+                      <margin top="24" left="0" bottom="0" right="0"/>
+                      <text value="     Normal Game Mode  &#10;Choose a name for you parrot"/>
+                    </properties>
+                  </component>
+                  <component id="def54" class="javax.swing.JTextField" binding="nameField">
+                    <constraints>
+                      <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <text value=""/>
+                    </properties>
+                  </component>
+                  <component id="6f809" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font name="Maiandra GD" size="16"/>
+                      <foreground color="-1"/>
+                      <text value="Name:"/>
+                    </properties>
+                  </component>
+                  <component id="43e44" class="javax.swing.JButton" binding="playNormalButton">
+                    <constraints>
+                      <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-1"/>
+                      <defaultCapable value="false"/>
+                      <icon value="images/icons/icons8-play-32.png"/>
+                      <label value=""/>
+                      <requestFocusEnabled value="false"/>
+                      <text value=""/>
+                      <toolTipText value="Play"/>
+                    </properties>
+                  </component>
+                  <hspacer id="ae51c">
+                    <constraints>
+                      <grid row="1" column="4" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                  <hspacer id="58fa6">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                  <vspacer id="b7d98">
+                    <constraints>
+                      <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </vspacer>
+                </children>
+              </grid>
+              <grid id="aa6a3" binding="loadPanel" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <card name="loadCard"/>
+                </constraints>
+                <properties>
+                  <background color="-21589"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="5a864" class="javax.swing.JButton" binding="slot1Button" default-binding="true">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-1"/>
+                      <defaultCapable value="false"/>
+                      <font size="16"/>
+                      <foreground color="-16777216"/>
+                      <text value="Slot1"/>
+                    </properties>
+                  </component>
+                  <component id="6db1d" class="javax.swing.JButton" binding="slot2Button" default-binding="true">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-1"/>
+                      <defaultCapable value="false"/>
+                      <font size="16"/>
+                      <foreground color="-16777216"/>
+                      <text value="Slot2"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="b85f0" binding="defaultPanel" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <card name="defaultCard"/>
+                </constraints>
+                <properties>
+                  <background color="-10654"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="dd0dd" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <horizontalAlignment value="0"/>
+                      <icon value="images/parrot/GameModes.png"/>
+                      <text value=""/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </grid>
+        </children>
+      </grid>
+      <grid id="18020" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="2" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-1"/>
+          <foreground color="-16777216"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="665bd" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="2" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <foreground color="-16777216"/>
+              <text value="© Copyright 2025 - Gabriela Prado | All Rights Reserved "/>
+            </properties>
+          </component>
+          <grid id="607bc" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="2" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-1"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="2dc29" class="javax.swing.JButton" binding="gitHubButton">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="2" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-1"/>
+                  <borderPainted value="true"/>
+                  <contentAreaFilled value="true"/>
+                  <defaultCapable value="false"/>
+                  <icon value="images/icons/icons8-github-32.png"/>
+                  <requestFocusEnabled value="false"/>
+                  <text value=""/>
+                  <toolTipText value="GitHub Link"/>
+                </properties>
+              </component>
+              <component id="1f33e" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <foreground color="-1"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>

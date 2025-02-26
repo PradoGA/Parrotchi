@@ -1,0 +1,131 @@
+{
+  "responses": {
+    "greetings": [
+      "Squawk! Hello there, friend!",
+      "Hiya! How’s it going?",
+      "Peek-a-boo! I see you!",
+      "Good day, little buddy!"
+    ],
+    "happy_mood": [
+      "Squawk! I’m so happy today!",
+      "I’m feeling fantastic!",
+      "Life is great with you around!",
+      "Squawk! Let’s dance!"
+    ],
+    "neutral_mood": [
+      "Squawk! What's up?",
+      "Squawk! Nice to see you!",
+      "Squawk! I'm feeling good today!",
+      "Squawk! What should we do next?",
+      "Squawk! Life is great!",
+      "Squawk! I'm here if you need me!",
+      "Squawk! Everything is fine!",
+      "Squawk! Just hanging out!"
+    ],
+    "angry_mood": [
+      "Squawk! I’m feeling a bit grumpy!",
+      "I’m not in the best mood today!",
+      "Squawk! Let’s take a deep breath!",
+      "I’m a little upset right now!"
+    ],
+    "sad_mood": [
+      "Squawk! I’m feeling a little down!",
+      "I’m not feeling very happy today!",
+      "Squawk! I need a hug!",
+      "I’m feeling a bit lonely!"
+    ],
+    "hungry": [
+      "Squawk! I’m feeling a bit hungry!",
+      "I could really use a snack!",
+      "Squawk! My tummy is rumbling!",
+      "I’m so hungry, I could eat a worm!"
+    ],
+    "bored": [
+      "Squawk! I’m feeling a bit bored!",
+      "I need something fun to do!",
+      "Squawk! Let’s play a game!",
+      "I’m so bored, I could fly in circles!"
+    ],
+    "feeling_lonely": [
+      "Squawk! I’m feeling a bit lonely!",
+      "I need someone to talk to!",
+      "Squawk! Can we chat for a while?",
+      "I’m feeling a bit isolated!"
+    ],
+    "need_cuddles": [
+      "Squawk! I need some cuddles!",
+      "I’m feeling a bit cuddly today!",
+      "Squawk! Can we snuggle for a while?",
+      "I’m so cuddly, I could hug a tree!"
+    ],
+    "tired": [
+      "Squawk! I’m feeling a bit tired!",
+      "I need some rest!",
+      "Squawk! Let’s take a nap!",
+      "I’m so tired, I could fall asleep!"
+    ],
+    "been_pet_response": [
+      "Squawk! That feels amazing!",
+      "More pets, please!",
+      "Squawk! You're the best!",
+      "Squawk! I love being petted!",
+      "Squawk! Don't stop!",
+      "Squawk! This is the life!",
+      "Squawk! You're making me so happy!",
+      "Squawk! I could get used to this!",
+      "Pet me forever!",
+      "Thank you for the pets!"
+    ],
+    "random_comments": [
+      "Did you know parrots can live for over 80 years?",
+      "Squawk! Parrots are super smart!",
+      "Fun fact: Some parrots can mimic human speech!",
+      "Did you know parrots can see ultraviolet light?",
+      "Squawk! Parrots have zygodactyl feet—two toes forward and two backward!",
+      "Did you know parrots are one of the few animals that can dance to music?",
+      "Fun fact: The Kakapo is the world's heaviest parrot!",
+      "Squawk! Parrots are social birds and love to live in flocks!",
+      "Did you know parrots can rotate their heads 180 degrees?",
+      "Fun fact: The African Grey Parrot is one of the most intelligent birds!",
+      "Squawk! Some parrots can learn over 100 words!",
+      "Did you know parrots are the only birds that can eat with their feet?",
+      "Fun fact: Parrots are found on every continent except Antarctica!",
+      "Squawk! The Hyacinth Macaw is the largest parrot in the world!",
+      "Did you know parrots have a strong sense of rhythm?",
+      "Fun fact: Parrots can recognize themselves in mirrors!",
+      "Squawk! Parrots are omnivores—they eat both plants and meat!",
+      "Did you know parrots can fly up to 50 miles per hour?",
+      "Fun fact: The smallest parrot is the Buff-faced Pygmy Parrot!",
+      "Squawk! Parrots are known for their vibrant and colorful feathers!",
+      "Did you know parrots can live in almost any habitat, from rainforests to deserts?",
+      "Fun fact: Parrots are monogamous and mate for life!",
+      "Squawk! Parrots can mimic sounds like doorbells and car alarms!",
+      "Did you know parrots have a lifespan similar to humans?",
+      "Fun fact: The Kea parrot is known for its curiosity and intelligence!",
+      "Squawk! Parrots are excellent problem solvers!",
+      "Did you know parrots can use tools to get food?",
+      "Fun fact: The Eclectus Parrot has the most distinct gender color differences!",
+      "Squawk! Parrots are one of the most popular pets in the world!",
+      "Did you know parrots can recognize human faces?",
+      "Fun fact: The Budgerigar (Budgie) is the most common pet parrot!",
+      "Squawk! Parrots have a strong beak that can crack nuts!",
+      "Did you know parrots can sleep with one eye open?",
+      "Fun fact: The Scarlet Macaw can live up to 75 years!",
+      "Squawk! Parrots are excellent climbers!",
+      "Did you know parrots can communicate with each other using sounds?",
+      "Fun fact: The Cockatoo is known for its crest and loud calls!",
+      "Squawk! Parrots are very playful and love toys!",
+      "Did you know parrots can feel emotions like happiness and sadness?",
+      "Fun fact: The Quaker Parrot builds intricate nests!",
+      "Squawk! Parrots are highly trainable and can learn tricks!",
+      "Did you know parrots can recognize their own names?",
+      "Fun fact: The Lovebird is named for its strong pair bonds!",
+      "Squawk! Parrots are known for their loud and distinctive calls!",
+      "Did you know parrots can imitate human laughter?",
+      "Fun fact: The Amazon Parrot is known for its talking ability!",
+      "Squawk! Parrots are very curious and love exploring!",
+      "Did you know parrots can form strong bonds with their owners?",
+      "Fun fact: The Lorikeet has a brush-tipped tongue for eating nectar!"
+    ]
+  }
+}

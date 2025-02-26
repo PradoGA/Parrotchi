@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="uiPackage.MenuGUI">
+  <grid id="cbd77" binding="contentPane" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="10" left="10" bottom="10" right="10"/>
+    <constraints>
+      <xy x="60" y="22" width="460" height="800"/>
+    </constraints>
+    <properties>
+      <background color="-10654"/>
+      <maximumSize width="460" height="800"/>
+      <minimumSize width="460" height="800"/>
+      <preferredSize width="460" height="800"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="e3588" layout-manager="GridLayoutManager" row-count="7" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-10654"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="8241f" class="javax.swing.JButton" binding="saveButton" default-binding="true">
+            <constraints>
+              <grid row="4" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-1"/>
+              <defaultCapable value="false"/>
+              <font name="Maiandra GD" size="14"/>
+              <icon value="images/icons/icons8-fly-64.png"/>
+              <iconTextGap value="8"/>
+              <requestFocusEnabled value="false"/>
+              <text value="Save"/>
+            </properties>
+          </component>
+          <grid id="a508f" binding="saveCredits" layout-manager="CardLayout" hgap="0" vgap="0">
+            <constraints>
+              <grid row="5" column="1" row-span="1" col-span="3" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-4855081"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <grid id="9b442" binding="defaultPanel" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <card name="defaultCard"/>
+                </constraints>
+                <properties>
+                  <background color="-4855081"/>
+                  <minimumSize width="20" height="20"/>
+                  <preferredSize width="20" height="20"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="6dda1" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <icon value="images/parrot/Thanks For Playin.png"/>
+                      <text value=""/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="f9128" binding="savePanel" layout-manager="GridLayoutManager" row-count="2" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <card name="saveCard"/>
+                </constraints>
+                <properties>
+                  <background color="-21589"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="6ad94" class="javax.swing.JButton" binding="slot1Button" default-binding="true">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-1"/>
+                      <foreground color="-16777216"/>
+                      <text value="Slot1"/>
+                    </properties>
+                  </component>
+                  <component id="4c0c1" class="javax.swing.JButton" binding="slot2Button" default-binding="true">
+                    <constraints>
+                      <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-1"/>
+                      <foreground color="-16777216"/>
+                      <text value="Slot2"/>
+                    </properties>
+                  </component>
+                  <hspacer id="73837">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                  <hspacer id="ef00">
+                    <constraints>
+                      <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                </children>
+              </grid>
+              <grid id="9cc9f" binding="creditsPanel" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <card name="creditsCard"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="cd4cb" class="javax.swing.JTextArea" binding="designAndProgrammingGabrielaTextArea" default-binding="true">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="50"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <background color="-4855081"/>
+                      <editable value="false"/>
+                      <font name="Maiandra GD" size="14" style="1"/>
+                      <foreground color="-16777216"/>
+                      <margin top="20" left="20" bottom="0" right="0"/>
+                      <text value="Design and Programming: Gabriela Prado.&#10;Made with IntelJ IDE -  100% Java&#10;Thanks to:&#10;Icons: https://icons8.com.&#10;Sound Effects: https://pixabay.com/sound-effects/.&#10;Character design: Dhazele from Midhaz Studio.&#10;&#10;"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </grid>
+          <hspacer id="e54c">
+            <constraints>
+              <grid row="2" column="4" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </hspacer>
+          <hspacer id="332a7">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </hspacer>
+          <component id="d83fb" class="javax.swing.JButton" binding="creditsButton" default-binding="true">
+            <constraints>
+              <grid row="3" column="1" row-span="1" col-span="3" vsize-policy="2" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-1"/>
+              <defaultCapable value="false"/>
+              <font name="Maiandra GD" size="14"/>
+              <icon value="images/icons/icons8-fish-and-vegetables-64.png"/>
+              <iconTextGap value="8"/>
+              <requestFocusEnabled value="false"/>
+              <text value="Credits"/>
+            </properties>
+          </component>
+          <grid id="8d871" binding="tittle2" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="3" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-4855081"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="a9799" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <icon value="images/parrot/pauseTittle.png"/>
+                  <text value=""/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <splitpane id="69d4d">
+            <constraints>
+              <grid row="2" column="1" row-span="1" col-span="3" vsize-policy="1" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <preferred-size width="200" height="200"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-10654"/>
+              <continuousLayout value="false"/>
+              <dividerLocation value="200"/>
+              <dividerSize value="2"/>
+              <enabled value="false"/>
+              <focusable value="false"/>
+              <foreground color="-10654"/>
+              <orientation value="1"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="bb243" class="javax.swing.JButton" binding="musicButton">
+                <constraints>
+                  <splitpane position="right"/>
+                </constraints>
+                <properties>
+                  <background color="-1"/>
+                  <font name="Maiandra GD" size="14"/>
+                  <icon value="images/icons/icons8-music-note-64.png"/>
+                  <requestFocusEnabled value="false"/>
+                  <text value="Music"/>
+                  <toolTipText value="Toggle music"/>
+                </properties>
+              </component>
+              <component id="c2b04" class="javax.swing.JButton" binding="soundButton">
+                <constraints>
+                  <splitpane position="left"/>
+                </constraints>
+                <properties>
+                  <background color="-1"/>
+                  <defaultCapable value="false"/>
+                  <font name="Maiandra GD" size="14"/>
+                  <icon value="images/icons/icons8-sound-64.png"/>
+                  <maximumSize width="148" height="50"/>
+                  <minimumSize width="148" height="50"/>
+                  <preferredSize width="148" height="50"/>
+                  <requestFocusEnabled value="false"/>
+                  <text value="Sounds"/>
+                  <toolTipText value="Toggle sound effects"/>
+                </properties>
+              </component>
+            </children>
+          </splitpane>
+          <splitpane id="d3e20">
+            <constraints>
+              <grid row="6" column="1" row-span="1" col-span="3" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <preferred-size width="200" height="200"/>
+              </grid>
+            </constraints>
+            <properties>
+              <dividerLocation value="200"/>
+              <dividerSize value="2"/>
+              <enabled value="false"/>
+              <focusable value="false"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="3da54" class="javax.swing.JButton" binding="exitGameButton">
+                <constraints>
+                  <splitpane position="right"/>
+                </constraints>
+                <properties>
+                  <background color="-1"/>
+                  <defaultCapable value="false"/>
+                  <font name="Maiandra GD" size="14"/>
+                  <icon value="images/icons/icons8-cancel-64.png"/>
+                  <iconTextGap value="8"/>
+                  <requestFocusEnabled value="false"/>
+                  <text value="Exit Game"/>
+                </properties>
+              </component>
+              <component id="142c1" class="javax.swing.JButton" binding="maiMenuButton">
+                <constraints>
+                  <splitpane position="left"/>
+                </constraints>
+                <properties>
+                  <background color="-1"/>
+                  <borderPainted value="false"/>
+                  <defaultCapable value="false"/>
+                  <font name="Maiandra GD" size="14"/>
+                  <icon value="images/icons/icons8-parrot-feather-64.png"/>
+                  <requestFocusEnabled value="false"/>
+                  <text value="Main Menu"/>
+                </properties>
+              </component>
+            </children>
+          </splitpane>
+          <component id="1f0bf" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-10654"/>
+              <font name="Maiandra GD" size="22"/>
+              <foreground color="-11702668"/>
+              <horizontalAlignment value="11"/>
+              <icon value="images/icons/icons8-pause-64.png"/>
+              <name value=""/>
+              <text value="GAME PAUSED"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="5a955" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="2" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-1"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="681df" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <foreground color="-16777216"/>
+              <text value="© Copyright 2025 - Gabriela Prado | All Rights Reserved "/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <vspacer id="4e1b3">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+    </children>
+  </grid>
+</form>

@@ -1,0 +1,276 @@
+{
+  "phrases": [
+    {
+      "phrase": "<html><body style='width: 240px;'>A <span style='color: red;'>madra</span> barked at the moon, dreaming of adventures in the starry night.</body></html>",
+      "answer": "dog"
+    },
+    {
+      "phrase": "<html><body style='width: 240px;'>The <span style='color: red;'>cat</span> curled by the fire, purring softly as the flames danced.</body></html>",
+      "answer": "cat"
+    },
+    {
+      "phrase": "<html><body style='width: 240px;'>A <span style='color: red;'>tír</span> of rolling hills and rivers stretched as far as the eye could see.</body></html>",
+      "answer": "country"
+    },
+    {
+      "phrase": "<html><body style='width: 240px;'>The <span style='color: red;'>grian</span> shone brightly, painting the sky in hues of gold and pink.</body></html>",
+      "answer": "sun"
+    },
+    {
+      "phrase": "<html><body style='width: 240px;'>A <span style='color: red;'>síofra</span> hid in the forest, whispering secrets to the ancient trees.</body></html>",
+      "answer": "elf"
+    },
+    {
+      "phrase": "<html><body style='width: 240px;'>The <span style='color: red;'>uisce</span> sparkled like diamonds under the morning light.</body></html>",
+      "answer": "water"
+    },
+    {
+      "phrase": "<html><body style='width: 240px;'>A <span style='color: red;'>draíocht</span> spell turned the pumpkin into a golden carriage.</body></html>",
+      "answer": "magic"
+    },
+    {
+      "phrase": "<html><body style='width: 240px;'>The <span style='color: red;'>ceol</span> filled the air, making everyone dance with joy.</body></html>",
+      "answer": "music"
+    },
+    {
+      "phrase": "<html><body style='width: 240px;'>A <span style='color: red;'>spéir</span> full of stars lit the way for the lost traveler.</body></html>",
+      "answer": "sky"
+    },
+    {
+      "phrase": "<html><body style='width: 240px;'>The <span style='color: red;'>bláth</span> bloomed in the meadow, its petals soft as silk.</body></html>",
+      "answer": "flower"
+    },
+    {
+      "phrase": "<html><body style='width: 240px;'>A <span style='color: red;'>cailín</span> skipped through the fields, her laughter echoing in the wind.</body></html>",
+      "answer": "girl"
+    },
+    {
+      "phrase": "<html><body style='width: 240px;'>The <span style='color: red;'>buachaill</span> climbed the tallest tree, searching for hidden treasures.</body></html>",
+      "answer": "boy"
+    },
+    {
+      "phrase": "<html><body style='width: 240px;'>A <span style='color: red;'>sliabh</span> stood tall, its peak touching the clouds.</body></html>",
+      "answer": "mountain"
+    },
+    {
+      "phrase": "<html><body style='width: 240px;'>The <span style='color: red;'>farraige</span> whispered stories of old to the sandy shore.</body></html>",
+      "answer": "sea"
+    },
+    {
+      "phrase": "<html><body style='width: 240px;'>A <span style='color: red;'>cathair</span> buzzed with life, its streets alive with laughter and light.</body></html>",
+      "answer": "city"
+    },
+    {
+      "phrase": "<html><body style='width: 240px;'>The <span style='color: red;'>sneachta</span> fell gently, covering the world in a blanket of white.</body></html>",
+      "answer": "snow"
+    },
+    {
+      "phrase": "<html><body style='width: 240px;'>A <span style='color: red;'>leipreachán</span> hid his pot of gold under a rainbow.</body></html>",
+      "answer": "leprechaun"
+    },
+    {
+      "phrase": "<html><body style='width: 240px;'>The <span style='color: red;'>gaoth</span> carried the scent of wildflowers across the valley.</body></html>",
+      "answer": "wind"
+    },
+    {
+      "phrase": "<html><body style='width: 240px;'>A <span style='color: red;'>cloch</span> sat by the river, smooth and cool to the touch.</body></html>",
+      "answer": "stone"
+    },
+    {
+      "phrase": "<html><body style='width: 240px;'>The <span style='color: red;'>coill</span> was alive with the songs of birds and rustling leaves.</body></html>",
+      "answer": "forest"
+    },
+    {
+      "phrase": "<html><body style='width: 240px;'>A <span style='color: red;'>bó</span> grazed peacefully in the meadow, her bell softly ringing.</body></html>",
+      "answer": "cow"
+    },
+    {
+      "phrase": "<html><body style='width: 240px;'>The <span style='color: red;'>síoda</span> scarf fluttered in the breeze, soft as a whisper.</body></html>",
+      "answer": "silk"
+    },
+    {
+      "phrase": "<html><body style='width: 240px;'>A <span style='color: red;'>cró</span> held the sheep safe from the howling wolves.</body></html>",
+      "answer": "pen"
+    },
+    {
+      "phrase": "<html><body style='width: 240px;'>The <span style='color: red;'>gealach</span> cast a silver glow over the sleeping village.</body></html>",
+      "answer": "moon"
+    },
+    {
+      "phrase": "<html><body style='width: 240px;'>A <span style='color: red;'>solas</span> flickered in the window, guiding the way home.</body></html>",
+      "answer": "light"
+    },
+    {
+      "phrase": "<html><body style='width: 240px;'>The <span style='color: red;'>clann</span> gathered around the table, sharing stories and laughter.</body></html>",
+      "answer": "family"
+    },
+    {
+      "phrase": "<html><body style='width: 240px;'>A <span style='color: red;'>carr</span> sped down the road, its engine roaring like a lion.</body></html>",
+      "answer": "car"
+    },
+    {
+      "phrase": "<html><body style='width: 240px;'>The <span style='color: red;'>teach</span> stood at the end of the lane, warm and inviting.</body></html>",
+      "answer": "house"
+    },
+    {
+      "phrase": "<html><body style='width: 240px;'>A <span style='color: red;'>páiste</span> built a sandcastle, their imagination running wild.</body></html>",
+      "answer": "child"
+    },
+    {
+      "phrase": "<html><body style='width: 240px;'>The <span style='color: red;'>bainne</span> was fresh and creamy, perfect for a morning drink.</body></html>",
+      "answer": "milk"
+    },
+    {
+      "phrase": "<html><body style='width: 240px;'>A <span style='color: red;'>cathaoir</span> sat by the window, waiting for someone to rest.</body></html>",
+      "answer": "chair"
+    },
+    {
+      "phrase": "<html><body style='width: 240px;'>The <span style='color: red;'>fuinneog</span> framed the sunset, painting the room in warm hues.</body></html>",
+      "answer": "window"
+    },
+    {
+      "phrase": "<html><body style='width: 240px;'>A <span style='color: red;'>doras</span> creaked open, revealing a room full of wonders.</body></html>",
+      "answer": "door"
+    },
+    {
+      "phrase": "<html><body style='width: 240px;'>The <span style='color: red;'>clog</span> ticked steadily, marking the passage of time.</body></html>",
+      "answer": "clock"
+    },
+    {
+      "phrase": "<html><body style='width: 240px;'>A <span style='color: red;'>leaba</span> waited in the corner, soft and ready for dreams.</body></html>",
+      "answer": "bed"
+    },
+    {
+      "phrase": "<html><body style='width: 240px;'>The <span style='color: red;'>bosca</span> held treasures from faraway lands, each with a story.</body></html>",
+      "answer": "box"
+    },
+    {
+      "phrase": "<html><body style='width: 240px;'>A <span style='color: red;'>cóta</span> hung by the door, ready for the chilly evening.</body></html>",
+      "answer": "coat"
+    },
+    {
+      "phrase": "<html><body style='width: 240px;'>The <span style='color: red;'>bróg</span> was worn but sturdy, perfect for long walks.</body></html>",
+      "answer": "shoe"
+    },
+    {
+      "phrase": "<html><body style='width: 240px;'>A <span style='color: red;'>hata</span> sat atop the scarecrow, keeping the birds away.</body></html>",
+      "answer": "hat"
+    },
+    {
+      "phrase": "<html><body style='width: 240px;'>The <span style='color: red;'>scáthán</span> reflected a world of endless possibilities.</body></html>",
+      "answer": "mirror"
+    },
+    {
+      "phrase": "<html><body style='width: 240px;'>A <span style='color: red;'>gloine</span> sparkled in the sunlight, catching every ray.</body></html>",
+      "answer": "glass"
+    },
+    {
+      "phrase": "<html><body style='width: 240px;'>The <span style='color: red;'>pláta</span> held a feast fit for a king.</body></html>",
+      "answer": "plate"
+    },
+    {
+      "phrase": "<html><body style='width: 240px;'>A <span style='color: red;'>forc</span> gleamed on the table, ready for the meal.</body></html>",
+      "answer": "fork"
+    },
+    {
+      "phrase": "<html><body style='width: 240px;'>The <span style='color: red;'>scian</span> sliced through the bread with ease.</body></html>",
+      "answer": "knife"
+    },
+    {
+      "phrase": "<html><body style='width: 240px;'>A <span style='color: red;'>spúnóg</span> stirred the soup, filling the air with warmth.</body></html>",
+      "answer": "spoon"
+    },
+    {
+      "phrase": "<html><body style='width: 240px;'>The <span style='color: red;'>cupán</span> held steaming tea, perfect for a cold day.</body></html>",
+      "answer": "cup"
+    },
+    {
+      "phrase": "<html><body style='width: 240px;'>A <span style='color: red;'>pota</span> simmered on the stove, its aroma filling the kitchen.</body></html>",
+      "answer": "pot"
+    },
+    {
+      "phrase": "<html><body style='width: 240px;'>The <span style='color: red;'>cistin</span> was the heart of the home, always bustling.</body></html>",
+      "answer": "kitchen"
+    },
+    {
+      "phrase": "<html><body style='width: 240px;'>A <span style='color: red;'>seomra</span> held memories of laughter and love.</body></html>",
+      "answer": "room"
+    },
+    {
+      "phrase": "<html><body style='width: 240px;'>The <span style='color: red;'>stair</span> creaked with every step, telling stories of the past.</body></html>",
+      "answer": "stairs"
+    },
+    {
+      "phrase": "<html><body style='width: 240px;'>A <span style='color: red;'>fuinneog</span> let in the morning light, waking the house.</body></html>",
+      "answer": "window"
+    },
+    {
+      "phrase": "<html><body style='width: 240px;'>The <span style='color: red;'>balla</span> stood strong, protecting the home from the storm.</body></html>",
+      "answer": "wall"
+    },
+    {
+      "phrase": "<html><body style='width: 240px;'>A <span style='color: red;'>urlár</span> was polished to a shine, reflecting the light.</body></html>",
+      "answer": "floor"
+    },
+    {
+      "phrase": "<html><body style='width: 240px;'>The <span style='color: red;'>síleáil</span> was painted with stars, a dreamy night sky.</body></html>",
+      "answer": "ceiling"
+    },
+    {
+      "phrase": "<html><body style='width: 240px;'>A <span style='color: red;'>díon</span> kept the rain out, sheltering the family inside.</body></html>",
+      "answer": "roof"
+    },
+    {
+      "phrase": "<html><body style='width: 240px;'>The <span style='color: red;'>gairdín</span> bloomed with colors, a paradise of flowers.</body></html>",
+      "answer": "garden"
+    },
+    {
+      "phrase": "<html><body style='width: 240px;'>A <span style='color: red;'>clós</span> was filled with toys, a playground for joy.</body></html>",
+      "answer": "yard"
+    },
+    {
+      "phrase": "<html><body style='width: 240px;'>The <span style='color: red;'>geata</span> swung open, welcoming visitors with a creak.</body></html>",
+      "answer": "gate"
+    },
+    {
+      "phrase": "<html><body style='width: 240px;'>A <span style='color: red;'>cosán</span> led through the woods, winding and mysterious.</body></html>",
+      "answer": "path"
+    },
+    {
+      "phrase": "<html><body style='width: 240px;'>The <span style='color: red;'>droichead</span> crossed the river, connecting two worlds.</body></html>",
+      "answer": "bridge"
+    },
+    {
+      "phrase": "<html><body style='width: 240px;'>A <span style='color: red;'>sruthán</span> babbled softly, its waters clear and cool.</body></html>",
+      "answer": "stream"
+    },
+    {
+      "phrase": "<html><body style='width: 240px;'>The <span style='color: red;'>loch</span> mirrored the sky, a perfect reflection of blue.</body></html>",
+      "answer": "lake"
+    },
+    {
+      "phrase": "<html><body style='width: 240px;'>A <span style='color: red;'>trá</span> stretched for miles, its sands golden and warm.</body></html>",
+      "answer": "beach"
+    },
+    {
+      "phrase": "<html><body style='width: 240px;'>The <span style='color: red;'>oileán</span> was a haven, surrounded by endless waves.</body></html>",
+      "answer": "island"
+    },
+    {
+      "phrase": "<html><body style='width: 240px;'>A <span style='color: red;'>cuan</span> sheltered the boats, safe from the stormy sea.</body></html>",
+      "answer": "harbor"
+    },
+    {
+      "phrase": "<html><body style='width: 240px;'>The <span style='color: red;'>bád</span> sailed smoothly, its sails catching the wind.</body></html>",
+      "answer": "boat"
+    },
+    {
+      "phrase": "<html><body style='width: 240px;'>A <span style='color: red;'>farraige</span> stretched to the horizon, vast and endless.</body></html>",
+      "answer": "sea"
+    },
+    {
+      "phrase": "<html><body style='width: 240px;'>The <span style='color: red;'>muir</span> whispered secrets to the shore, timeless and deep.</body></html>",
+      "answer": "ocean"
+    }
+  ]
+}

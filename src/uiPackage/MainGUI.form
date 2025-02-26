@@ -32,66 +32,70 @@
             <properties>
               <background color="-10654"/>
             </properties>
-            <border type="none"/>
+            <border type="line">
+              <color color="-21589"/>
+            </border>
             <children>
               <hspacer id="87451">
                 <constraints>
                   <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="1" use-parent-layout="false"/>
                 </constraints>
               </hspacer>
-              <component id="66eef" class="javax.swing.JSlider" binding="slider1" default-binding="true">
-                <constraints>
-                  <grid row="2" column="2" row-span="2" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <background color="-10654"/>
-                  <focusable value="false"/>
-                </properties>
-              </component>
               <hspacer id="e74af">
                 <constraints>
-                  <grid row="2" column="4" row-span="2" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <grid row="1" column="4" row-span="3" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                 </constraints>
               </hspacer>
               <component id="5faf2" class="javax.swing.JButton" binding="configButton">
                 <constraints>
-                  <grid row="2" column="3" row-span="2" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="4" use-parent-layout="false"/>
+                  <grid row="1" column="3" row-span="3" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="1" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <background color="-1"/>
+                  <contentAreaFilled value="true"/>
                   <focusPainted value="false"/>
-                  <icon value="images/icons/icons8-config-32.png"/>
+                  <focusable value="false"/>
+                  <icon value="images/icons/icons8-menu-32.png"/>
                   <text value=""/>
+                  <toolTipText value="Menu"/>
                 </properties>
               </component>
               <hspacer id="44be9">
                 <constraints>
-                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                 </constraints>
               </hspacer>
-              <component id="e47b4" class="javax.swing.JLabel" binding="feedNotifier">
+              <component id="f0a54" class="javax.swing.JLabel" binding="moodLabel">
                 <constraints>
-                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                  <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
-                  <icon value="images/icons/icons8-flax-seeds-24.png"/>
+                  <font name="Maiandra GD" size="22" style="1"/>
+                  <foreground color="-10657175"/>
+                  <horizontalAlignment value="0"/>
+                  <icon value="assets/icons8-happy-64.png"/>
+                  <iconTextGap value="20"/>
+                  <text value="Happy"/>
+                </properties>
+              </component>
+              <component id="1bdfd" class="javax.swing.JButton" binding="questionButton">
+                <constraints>
+                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-1"/>
+                  <disabledSelectedIcon value="images/icons/icons8-question-32.png"/>
+                  <focusable value="false"/>
+                  <icon value="images/icons/icons8-question-32.png"/>
+                  <label value=""/>
                   <text value=""/>
                 </properties>
               </component>
-              <component id="273b6" class="javax.swing.JLabel" binding="playNotifier">
+              <hspacer id="28663">
                 <constraints>
-                  <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                 </constraints>
-                <properties>
-                  <icon value="images/icons/icons8-game-controller-24.png"/>
-                  <text value=""/>
-                </properties>
-              </component>
-              <vspacer id="c04f0">
-                <constraints>
-                  <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
-                </constraints>
-              </vspacer>
+              </hspacer>
             </children>
           </grid>
           <grid id="5440f" binding="bottomBar" layout-manager="GridLayoutManager" row-count="1" column-count="9" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
@@ -110,13 +114,14 @@
                 </constraints>
                 <properties>
                   <background color="-1"/>
+                  <disabledSelectedIcon value="images/icons/icons8-pet-64.png"/>
                   <enabled value="true"/>
                   <focusPainted value="false"/>
                   <icon value="images/icons/icons8-pet-64.png"/>
                   <margin top="10" left="10" bottom="10" right="10"/>
-                  <selected value="true"/>
-                  <selectedIcon value="images/icons/icons8-pet-64.png"/>
+                  <selected value="false"/>
                   <text value=""/>
+                  <toolTipText value="Pet Me &lt;3"/>
                 </properties>
               </component>
               <component id="d30d1" class="javax.swing.JButton" binding="chatButton">
@@ -125,11 +130,12 @@
                 </constraints>
                 <properties>
                   <background color="-1"/>
+                  <disabledSelectedIcon value="images/icons/icons8-talk-64.png"/>
                   <focusPainted value="false"/>
                   <icon value="images/icons/icons8-talk-64.png"/>
                   <margin top="10" left="10" bottom="10" right="10"/>
-                  <selectedIcon value="images/icons/icons8-talk-64.png"/>
                   <text value=""/>
+                  <toolTipText value="Talk to me"/>
                 </properties>
               </component>
               <component id="53fb8" class="javax.swing.JButton" binding="playButton">
@@ -138,10 +144,12 @@
                 </constraints>
                 <properties>
                   <background color="-1"/>
+                  <disabledSelectedIcon value="images/icons/icons8-game-64.png"/>
                   <focusPainted value="false"/>
                   <icon value="images/icons/icons8-game-64.png"/>
                   <margin top="10" left="10" bottom="10" right="10"/>
                   <text value=""/>
+                  <toolTipText value="Play With me"/>
                 </properties>
               </component>
               <hspacer id="605e">
@@ -178,6 +186,7 @@
                   <borderPainted value="true"/>
                   <contentAreaFilled value="true"/>
                   <defaultCapable value="true"/>
+                  <disabledSelectedIcon value="images/icons/icons8-flax-seeds-64.png"/>
                   <focusPainted value="false"/>
                   <horizontalAlignment value="0"/>
                   <horizontalTextPosition value="0"/>
@@ -185,14 +194,14 @@
                   <iconTextGap value="4"/>
                   <margin top="10" left="10" bottom="10" right="10"/>
                   <text value=""/>
+                  <toolTipText value="Feed Me"/>
                   <verticalAlignment value="0"/>
                   <visible value="true"/>
                 </properties>
               </component>
             </children>
           </grid>
-          <grid id="6ab7e" binding="chatPanel" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
-            <margin top="0" left="0" bottom="0" right="0"/>
+          <grid id="6ab7e" binding="chatPanel" layout-manager="CardLayout" hgap="0" vgap="0">
             <constraints>
               <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
             </constraints>
@@ -201,24 +210,37 @@
             </properties>
             <border type="none"/>
             <children>
-              <component id="4e88d" class="javax.swing.JLabel" binding="chatLabel">
+              <component id="c1e0" class="javax.swing.JLabel" binding="chatLabel">
                 <constraints>
-                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                  <card name="bubbleCard"/>
                 </constraints>
                 <properties>
-                  <font name="Bradley Hand ITC" size="36" style="1"/>
-                  <foreground color="-16777216"/>
+                  <font name="Maiandra GD" size="18"/>
+                  <foreground color="-12828863"/>
                   <horizontalAlignment value="0"/>
                   <horizontalTextPosition value="0"/>
                   <icon value="images/parrot/chatBackground.png"/>
-                  <text value="Hello"/>
+                  <text value="What's the craic?"/>
+                  <verticalTextPosition value="0"/>
+                </properties>
+              </component>
+              <component id="f1b72" class="javax.swing.JLabel" binding="nameLabel">
+                <constraints>
+                  <card name="nameCard"/>
+                </constraints>
+                <properties>
+                  <font name="Maiandra GD" size="22"/>
+                  <foreground color="-12828863"/>
+                  <horizontalAlignment value="0"/>
+                  <horizontalTextPosition value="0"/>
+                  <text value="Robert The Parrot"/>
                 </properties>
               </component>
             </children>
           </grid>
           <grid id="75166" binding="spritePanel" layout-manager="CardLayout" hgap="0" vgap="0">
             <constraints>
-              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties/>
             <border type="none"/>
@@ -240,7 +262,7 @@
                     <properties>
                       <horizontalAlignment value="0"/>
                       <horizontalTextPosition value="0"/>
-                      <icon value="images/parrot/idleImage.png"/>
+                      <icon value="images/parrot/happyImg.png"/>
                       <text value=""/>
                     </properties>
                   </component>
