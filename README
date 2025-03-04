@@ -1,0 +1,20 @@
+# Parrotchi
+
+## Overview
+Parrotchi is an interactive virtual pet game where you take care of a digital Parrot.
+The game is designed to simulate the experience of nurturing and interacting with a pet, providing various activities(irish word quizes) and challenges to keep your parrot happy and healthy.
+
+## Features
+
+- **Feed and Care**: Ensure your parrot is well-fed and cared for.
+- **Chat and Play**: Engage in conversations and play mini-games with your parrot.
+- **Mood Management**: Monitor and manage your parrot's mood and needs.
+- **Interactive GUI**: User-friendly interface for seamless interaction.
+
+
+License
+This project is licensed under the GNU General Public License v3.0. See the LICENSE file for details.
+
+
+Contact
+For any inquiries, support or if you want an executable of the game, please contact [stinkycatstudio@gmail.com].
