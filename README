@@ -11,6 +11,7 @@ The game is designed to simulate the experience of nurturing and interacting wit
 - **Mood Management**: Monitor and manage your parrot's mood and needs.
 - **Interactive GUI**: User-friendly interface for seamless interaction.
 
+##Note: remember to add your own OpenAI Api key 
 
 License
 This project is licensed under the GNU General Public License v3.0. See the LICENSE file for details.
