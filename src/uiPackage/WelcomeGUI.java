@@ -6,6 +6,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 import java.io.IOException;
+import java.net.URI;
 import java.util.ArrayList;
 
 public class WelcomeGUI extends JFrame {
@@ -263,6 +264,25 @@ public class WelcomeGUI extends JFrame {
                 // Move window
                 WelcomeGUI.this.setLocation(newX, newY);
                 super.mouseDragged(e);
+
+            }
+        });
+        gitHubButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e)
+            {
+                soundManager.playButtonSound();
+                try {
+                    URI uri = new URI("https://github.com/PradoGA/Parrotchi.git"); // Replace with your GitHub URL
+                    if (Desktop.isDesktopSupported()) {
+                        Desktop.getDesktop().browse(uri);
+                    } else {
+                        JOptionPane.showMessageDialog(null, "Desktop is not supported. Cannot open the link.", "Error", JOptionPane.ERROR_MESSAGE);
+                    }
+                } catch (Exception ex) {
+                    JOptionPane.showMessageDialog(null, "Failed to open the link.", "Error", JOptionPane.ERROR_MESSAGE);
+                    ex.printStackTrace();
+                }
 
             }
         });
