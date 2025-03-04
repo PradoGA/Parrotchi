@@ -1,14 +1,15 @@
 package main;
 
 import javax.swing.*;
+import java.io.*;
 
 import static main.JarFileOrganizer.getJarDirectory;
-import java.io.*;
 
 public class LocalFileManager {
 
     private final String BACKUP_ONE = "slotOne.ser";
     private final String BACKUP_TWO = "slotTwo.ser";
+    private final String SAVED_FOLDER = "saved";
 
     // Helper method to check if a file exists
     private boolean fileExistsCheck(String fileName) {
@@ -17,9 +18,20 @@ public class LocalFileManager {
         return file.exists();
     }
 
-    // Helper method to get the full path for a file
+    // Helper method to get the full path for a file, ensuring the "saved" folder exists
     private String getFilePath(String fileName) {
-        return getJarDirectory() + File.separator + fileName;
+        String jarDirectory = getJarDirectory();
+        File savedFolder = new File(jarDirectory, SAVED_FOLDER);
+
+        // Create the "saved" folder if it doesn't exist
+        if (!savedFolder.exists()) {
+            boolean created = savedFolder.mkdir();
+            if (!created) {
+                System.err.println("Failed to create 'saved' directory.");
+            }
+        }
+
+        return savedFolder.getAbsolutePath() + File.separator + fileName;
     }
 
     public void backUpSlotOne(Tamagotchi pet) throws IOException {
@@ -40,6 +52,8 @@ public class LocalFileManager {
              ObjectOutputStream out = new ObjectOutputStream(fileOut)) {
             out.writeObject(pet);
             System.out.println("Pet " + pet.getName() + " saved to: " + getFilePath(BACKUP_ONE));
+            JOptionPane.showMessageDialog(null,"Game Saved","Confirmation",JOptionPane.INFORMATION_MESSAGE);
+
         }
     }
 
@@ -53,7 +67,7 @@ public class LocalFileManager {
             );
 
             if (selection != 0) {
-                throw new IOException("Slot two backup file already exists. Overwrite not allowed.");
+                throw new IOException("Slot one backup file already exists. Overwrite not allowed.");
             }
         }
 
@@ -61,6 +75,8 @@ public class LocalFileManager {
              ObjectOutputStream out = new ObjectOutputStream(fileOut)) {
             out.writeObject(pet);
             System.out.println("Pet " + pet.getName() + " saved to: " + getFilePath(BACKUP_TWO));
+            JOptionPane.showMessageDialog(null,"Game Saved","Confirmation",JOptionPane.INFORMATION_MESSAGE);
+
         }
     }
 

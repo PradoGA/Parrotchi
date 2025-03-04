@@ -157,6 +157,7 @@
                   <requestFocusEnabled value="false"/>
                   <text value=""/>
                   <toolTipText value="Quick Game"/>
+                  <visible value="true"/>
                 </properties>
               </component>
               <component id="ed187" class="javax.swing.JButton" binding="newButton">

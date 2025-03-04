@@ -14,7 +14,7 @@ import java.util.logging.Logger;
 
 public class AIParrot {
     private static final String API_URL = "https://api.openai.com/v1/chat/completions";
-    private static final String API_KEY = "s"; // Replace with your actual OpenAI API key
+    private static final String API_KEY = ""; // Replace with your actual OpenAI API key
 
     public String talkToParrot(String userInput, Tamagotchi pet) {
         try {
@@ -66,7 +66,7 @@ public class AIParrot {
             }
         } catch (Exception e) {
             e.printStackTrace();
-            return "Sorry, I'm having trouble connecting to the server. Please try again later.";
+            return "Please, can you repeat?";
         }
     }
 
@@ -86,8 +86,6 @@ public class AIParrot {
             } catch (Exception e) {
                 e.printStackTrace();
                 return "Failed to parse response.";
-
-
             }
 
 

@@ -26,7 +26,7 @@ public class SoundManager {
     final private String RELAXING_LOOP_PATH = "sounds/relaxingLoop.wav";
     final private String HAPPY_LOOP_PATH = "sounds/happyLoop.wav";
     private Clip clip;
-    private int backgroundVolume = -10;
+    private int backgroundVolume = -5;
     private final static SoundManager SOUND_MANAGER_INSTANCE = new SoundManager();
     boolean canPlaySounds = true;
 

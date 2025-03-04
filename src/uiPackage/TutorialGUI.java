@@ -5,8 +5,7 @@ import main.SoundManager;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.event.*;
 
 public class TutorialGUI extends JDialog {
     private JPanel contentPane;
@@ -29,6 +28,7 @@ public class TutorialGUI extends JDialog {
     int currentCard = 1;
     int typeOfGame = -1; //0 quick, 1 normal
     String currentName;
+    private Point initialClick;
 
 
     public TutorialGUI()
@@ -112,6 +112,38 @@ public class TutorialGUI extends JDialog {
                 }
             }
         });
+        //MOUSE LISTENER
+        contentPane.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mousePressed(MouseEvent e)
+            {
+                initialClick = e.getPoint();
+                super.mousePressed(e);
+
+            }
+        });
+        contentPane.addMouseMotionListener(new MouseMotionAdapter() {
+            @Override
+            public void mouseDragged(MouseEvent e)
+            {
+
+                int thisX = TutorialGUI.this.getLocation().x;
+                int thisY = TutorialGUI.this.getLocation().y;
+
+                // Calculate new location
+                int xMoved = e.getX() - initialClick.x;
+                int yMoved = e.getY() - initialClick.y;
+
+                int newX = thisX + xMoved;
+                int newY = thisY + yMoved;
+
+                // Move window
+                TutorialGUI.this.setLocation(newX, newY);
+                super.mouseDragged(e);
+
+            }
+        });
+
     }
 
     public void openTutorialGUI(TutorialGUI tutorialGUI, WelcomeGUI welcomeGUI, int gameType)
@@ -122,6 +154,7 @@ public class TutorialGUI extends JDialog {
         tutorialGUI.setSize(460,800);
         tutorialGUI.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
         tutorialGUI.setResizable(false);
+        tutorialGUI.setUndecorated(true);
 
         Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
         int x = welcomeGUI.getX();

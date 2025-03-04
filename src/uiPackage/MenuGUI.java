@@ -6,10 +6,7 @@ import main.SoundManager;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.WindowAdapter;
-import java.awt.event.WindowEvent;
+import java.awt.event.*;
 import java.io.IOException;
 
 public class MenuGUI extends JDialog {
@@ -29,6 +26,7 @@ public class MenuGUI extends JDialog {
     private JButton musicButton;
     private JButton soundButton;
     private JButton maiMenuButton;
+    private JButton backbutton;
     private JButton buttonOK;
 
     CardLayout pauseCardLayout;
@@ -38,6 +36,8 @@ public class MenuGUI extends JDialog {
     private final String DEFAULT_CARD = "defaultCard";
     private final String SAVE_CARD = "saveCard";
     private final String CREDITS_CARD = "creditsCard";
+
+    private Point initialClick;
 
     public MenuGUI()
     {
@@ -154,6 +154,46 @@ public class MenuGUI extends JDialog {
                    dispose();
             }
         });
+        backbutton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e)
+            {
+                SoundManager.getSoundManagerInstance().playButtonSound();
+
+                // Mirror pause handling from configButton in MainGUI
+                Game.getGameInstance().getMainGUI().setPaused(false);
+                dispose();
+            }
+        });
+
+        //MOUSE LISTENER
+        contentPane.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mousePressed(MouseEvent e)
+            {
+                initialClick = e.getPoint();
+                super.mousePressed(e);
+            }
+        });
+        contentPane.addMouseMotionListener(new MouseMotionAdapter() {
+            @Override
+            public void mouseDragged(MouseEvent e)
+            {
+                int thisX = MenuGUI.this.getLocation().x;
+                int thisY = MenuGUI.this.getLocation().y;
+
+                // Calculate new location
+                int xMoved = e.getX() - initialClick.x;
+                int yMoved = e.getY() - initialClick.y;
+
+                int newX = thisX + xMoved;
+                int newY = thisY + yMoved;
+
+                // Move window
+                MenuGUI.this.setLocation(newX, newY);
+                super.mouseDragged(e);
+            }
+        });
     }
 
 
@@ -164,18 +204,16 @@ public class MenuGUI extends JDialog {
             @Override
             public void windowClosed(WindowEvent e) {
                 // Match your existing sound management pattern
-                SoundManager.getSoundManagerInstance().playButtonSound();
 
-                // Mirror pause handling from configButton in MainGUI
-                mainGUI.setPaused(false);
             }
         });
 
         menuGUI.setContentPane((menuGUI.contentPane));
         menuGUI.setTitle("Parrotchi - Your Feather Friend - Pause Menu");
         menuGUI.setSize(460,800);
-        menuGUI.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        menuGUI.setResizable(false); // Add this line to prevent resizing
+        menuGUI.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
+        menuGUI.setResizable(false);// Add this line to prevent resizing
+        menuGUI.setUndecorated(true);
 
 
         // Center window on screen

@@ -4,8 +4,7 @@ import main.*;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.event.*;
 import java.io.IOException;
 import java.util.ArrayList;
 
@@ -45,6 +44,7 @@ public class WelcomeGUI extends JFrame {
     CardLayout menuCardLayout;
 
     SoundManager soundManager;
+    private Point initialClick;
 
 
 
@@ -233,6 +233,39 @@ public class WelcomeGUI extends JFrame {
                 }
             }
         });
+
+
+        //MOUSE LISTENER
+        contentPane.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mousePressed(MouseEvent e)
+            {
+                initialClick = e.getPoint();
+                super.mousePressed(e);
+
+            }
+        });
+        contentPane.addMouseMotionListener(new MouseMotionAdapter() {
+            @Override
+            public void mouseDragged(MouseEvent e)
+            {
+
+                int thisX = WelcomeGUI.this.getLocation().x;
+                int thisY = WelcomeGUI.this.getLocation().y;
+
+                // Calculate new location
+                int xMoved = e.getX() - initialClick.x;
+                int yMoved = e.getY() - initialClick.y;
+
+                int newX = thisX + xMoved;
+                int newY = thisY + yMoved;
+
+                // Move window
+                WelcomeGUI.this.setLocation(newX, newY);
+                super.mouseDragged(e);
+
+            }
+        });
     }
 
     public void openWelcomeGUI(WelcomeGUI welcomeGUI)
@@ -240,17 +273,27 @@ public class WelcomeGUI extends JFrame {
 
         welcomeGUI.setContentPane((welcomeGUI.contentPane));
         welcomeGUI.setTitle("Parrotchi - Your Feather Friend");
-        welcomeGUI.setSize(460,800);
         welcomeGUI.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
         welcomeGUI.setResizable(false); // Add this line to prevent resizing
+        welcomeGUI.setUndecorated(true);
 
-        menuCardLayout.show(optionsPanel, DEFAULT_CARD);
+        Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+        if(screenSize.height < 860)
+        {
+            welcomeGUI.setSize(460,700);
+        }
+        else {
+            welcomeGUI.setSize(460,800);
+        }
+
 
         // Center window on screen
-        Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+
         int x = (screenSize.width - welcomeGUI.getWidth()) / 2;
-        int y = (screenSize.height - welcomeGUI.getHeight()) / 2;
+        int y = 0;
         welcomeGUI.setLocation(x, y);
+        menuCardLayout.show(optionsPanel, DEFAULT_CARD);
+        System.out.println(screenSize.height);
         welcomeGUI.setVisible(true);
 
     }

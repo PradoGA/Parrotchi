@@ -5,10 +5,7 @@ import main.Game;
 import main.SoundManager;
 
 import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.FocusAdapter;
-import java.awt.event.FocusEvent;
+import java.awt.event.*;
 import java.util.Timer;
 
 public class ActionsGUI extends JPanel{
@@ -42,6 +39,17 @@ public class ActionsGUI extends JPanel{
     private JButton cancelButton1;
     private JButton sendButton1;
     private JLabel timeLabel;
+    private JPanel iconTest;
+    private JLabel angryIco;
+    private JPanel happyIconPanel;
+
+
+
+    private JLabel happyIco;
+    private JPanel neutralIconPanel;
+    private JLabel neutralIco;
+    private JPanel sadIconPanel;
+    private JLabel sadIco;
 
     private Timer gameTimer;
 
@@ -57,13 +65,10 @@ public class ActionsGUI extends JPanel{
             @Override
             public void actionPerformed(ActionEvent e)
             {
-                soundManager.playButtonSound();
-                String currentText;
-                currentText = textArea1.getText();
-                Game.getGameInstance().getMainGUI().sendMessage(currentText);
-                textArea1.setText(" ");
-                soundManager.playParrotSound();
+                sendMessage();
             }
+
+
         });
 
         //CANCEL CHAT
@@ -90,11 +95,7 @@ public class ActionsGUI extends JPanel{
             public void actionPerformed(ActionEvent e)
             {
                 soundManager.playButtonSound();
-                String userAnswer = quizField.getText();
-                Game.getGameInstance().getMainGUI().closeMinigame(userAnswer);
-                if (gameTimer != null) {
-                    gameTimer.cancel();
-                }
+                sendAnswer();
             }
         });
 
@@ -111,6 +112,40 @@ public class ActionsGUI extends JPanel{
                 Game.getGameInstance().getMainGUI().cancelMinigame();
             }
         });
+
+        //Enter Key Listener
+        textArea1.addKeyListener(new KeyAdapter() {
+            @Override
+            public void keyPressed(KeyEvent e)
+            {
+                if(e.getKeyCode() == KeyEvent.VK_ENTER)
+                {
+                    soundManager.playButtonSound();
+                    sendMessage();
+                }
+            }
+        });
+        quizField.addKeyListener(new KeyAdapter() {
+            @Override
+            public void keyPressed(KeyEvent e)
+            {
+                if(e.getKeyCode() == KeyEvent.VK_ENTER)
+                {
+                    sendAnswer();
+                    super.keyPressed(e);
+                }
+
+            }
+        });
+    }
+
+    private void sendAnswer()
+    {
+        String userAnswer = quizField.getText();
+        Game.getGameInstance().getMainGUI().closeMinigame(userAnswer);
+        if (gameTimer != null) {
+            gameTimer.cancel();
+        }
     }
 
     public void cancelEndTimeMiniGame()
@@ -196,5 +231,33 @@ public class ActionsGUI extends JPanel{
         return angryPanel;
     }
 
+    private void sendMessage()
+    {
+        soundManager.playButtonSound();
+        String currentText;
+        currentText = textArea1.getText();
+        Game.getGameInstance().getMainGUI().sendMessage(currentText);
+        textArea1.setText(" ");
+        soundManager.playParrotSound();
+    }
+
+    public JLabel getAngryIco()
+    {
+        return angryIco;
+    }
+    public JLabel getHappyIco()
+    {
+        return happyIco;
+    }
+
+    public JLabel getNeutralIco()
+    {
+        return neutralIco;
+    }
+
+    public JLabel getSadIco()
+    {
+        return sadIco;
+    }
 
 }

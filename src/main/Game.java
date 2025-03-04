@@ -19,11 +19,11 @@ public class Game {
     private static Timer energyTimer;
 
     //NORMAL GAME TIME
-    final static int HUNGER_TIME = 25000; //25 seconds
-    final static int LOVE_TIME = 40000; //40 seconds
-    final static int CHAT_TIME = 50000; //50 seconds
-    final static int BOREDOM_TIME = 120000; //2 minute
-    final static int ENERGY_TIME = 150000; //2.5 minutes
+    final static int HUNGER_TIME = 20000; //20 seconds
+    final static int LOVE_TIME = 30000; //30 seconds
+    final static int CHAT_TIME = 40000; //40 seconds
+    final static int BOREDOM_TIME = 60000; //1 minute
+    final static int ENERGY_TIME = 100000; //2.5 minutes
 
 
     //QUICK GAME TIME

@@ -7,35 +7,40 @@ import java.nio.file.Paths;
 
 public class JarFileOrganizer {
 
-    public static String getJarDirectory()
-    {
-        try
-        {
-            // Get the URL of the JAR file or the class file
-            URL url = Game.class.getProtectionDomain().getCodeSource().getLocation();
-            System.out.println("URL of the JAR or class file: " + url);
+    public static String getJarDirectory() {
+        try {
+            Class<?> contextClass = Game.class;
+            URL url = contextClass.getProtectionDomain().getCodeSource().getLocation();
 
-            // Convert the URL to a File object
-            File file = new File(url.toURI());
-
-            // If the file is a directory (running in an IDE), return its path
-            if (file.isDirectory())
-            {
-                System.out.println("Running in IDE. Using class directory: " + file.getAbsolutePath());
-                return Paths.get(".").toAbsolutePath().toString();
+            // Handle potential null values from protection domain
+            if (url == null) {
+                return getFallbackDirectory("Unable to determine code source location");
             }
 
-            // If the file is a JAR, return its parent directory
-            String jarDirectory = file.getParent();
-            System.out.println("Running from JAR. JAR directory: " + jarDirectory);
-            return jarDirectory;
+            File sourceFile;
+            try {
+                sourceFile = new File(url.toURI());
+            } catch (URISyntaxException e) {
+                return getFallbackDirectory("Invalid URI syntax: " + e.getMessage());
+            }
 
-        } catch (URISyntaxException e)
-        {
-            // If something goes wrong, fall back to the current working directory
-            String workingDirectory = Paths.get(".").toAbsolutePath().normalize().toString();
-            System.out.println("Error getting JAR directory. Falling back to working directory: " + workingDirectory);
-            return workingDirectory;
+            if (sourceFile.isDirectory()) {
+                System.out.println("[DEBUG] IDE development mode: " + sourceFile);
+                return Paths.get("").toAbsolutePath().toString();
+            } else {
+                String parentPath = sourceFile.getParent();
+                System.out.println("[DEBUG] Packaged executable mode: " + parentPath);
+                return Paths.get(parentPath).normalize().toString();
+            }
+        } catch (SecurityException e) {
+            return getFallbackDirectory("Security restriction: " + e.getMessage());
+        } catch (Exception e) {
+            return getFallbackDirectory("Unexpected error: " + e.getMessage());
         }
+    }
+
+    private static String getFallbackDirectory(String errorMessage) {
+        System.err.println("Falling back to working directory. Reason: " + errorMessage);
+        return Paths.get("").toAbsolutePath().normalize().toString();
     }
 }

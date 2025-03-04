@@ -26,7 +26,7 @@ public class MiniGameManager {
     public String getCurrentPhrase()
     {
         System.out.println("Phrase: " + currentPhrase);
-        return currentPhrase;
+        return  currentPhrase;
     }
 
 

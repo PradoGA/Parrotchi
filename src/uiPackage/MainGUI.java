@@ -6,8 +6,7 @@ import minigames.MiniGameManager;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.event.*;
 import java.net.URL;
 import java.util.ArrayList;
 
@@ -50,6 +49,7 @@ public class MainGUI extends JFrame{
     private int petTime = 2500;
     private Timer sleepingTimer;
     private int sleepTime = 12000;
+    private Point initialClick;
 
 
 
@@ -280,14 +280,14 @@ public class MainGUI extends JFrame{
 
                 miniGameManager.getRandomPhrase();
                 String currentPhrase = miniGameManager.getCurrentPhrase();
-                chatLabel.setText(currentPhrase);
+                chatLabel.setText( currentPhrase);
                 String answer =  miniGameManager.getCurrentAnswer().toUpperCase();
 
                 String placeHolder = "_ ".repeat(answer.length() - 1);
                 actionsGUI.setQuizField(answer.charAt(0) + placeHolder);
                 ExtractRedText extractRedText = new ExtractRedText();
                 String irishWord = extractRedText.extractText(currentPhrase);
-                actionsGUI.setQuizLabelAndTimer("<html> <body style='width: 100px; text-align: center;'> How do you say '"+ irishWord + "'in English?</body> </html>");
+                actionsGUI.setQuizLabelAndTimer("<html> <body style='width: 100px; text-align: center;'>Guess the Irish word: <h1><span style='color: red;'>"+ irishWord + "</span></h1>in English?</body> </html>");
             }
         });
 
@@ -322,6 +322,38 @@ public class MainGUI extends JFrame{
 
 
 
+            }
+        });
+
+        //MOUSE LISTENER
+        basePanel.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mousePressed(MouseEvent e)
+            {
+                initialClick = e.getPoint();
+                System.out.println("FIRST CLICK");
+                super.mousePressed(e);
+            }
+        });
+        basePanel.addMouseMotionListener(new MouseMotionAdapter() {
+            @Override
+            public void mouseDragged(MouseEvent e)
+            {
+
+                int thisX = MainGUI.this.getLocation().x;
+                int thisY = MainGUI.this.getLocation().y;
+
+                // Calculate new location
+                int xMoved = e.getX() - initialClick.x;
+                int yMoved = e.getY() - initialClick.y;
+
+                int newX = thisX + xMoved;
+                int newY = thisY + yMoved;
+
+                // Move window
+                MainGUI.this.setLocation(newX, newY);
+                super.mouseDragged(e);
+                super.mouseDragged(e);
             }
         });
     }
@@ -393,6 +425,7 @@ public class MainGUI extends JFrame{
         myGui.setTitle("Parrotchi - Your Feather Friend");
         myGui.setSize(460,800);
         myGui.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
+        myGui.setUndecorated(true);
         myGui.setResizable(false); // Add this line to prevent resizing
 
 
@@ -530,43 +563,28 @@ public class MainGUI extends JFrame{
     public void changeMoodLabel(Moods currentMood)
     {
 
-        String path = null;
+
         switch (currentMood)
         {
             case Happy -> {
 
-                path = happyImg;
+                moodLabel.setIcon(actionsGUI.getHappyIco().getIcon());
             }
             case Neutral -> {
 
-                path = neutralImg;
+                moodLabel.setIcon(actionsGUI.getNeutralIco().getIcon());
             }
             case Angry -> {
 
-                path = angryImg;
+                moodLabel.setIcon(actionsGUI.getAngryIco().getIcon());
                 soundManager.playAngrySound();
             }
             case Sad -> {
+                moodLabel.setIcon(actionsGUI.getSadIco().getIcon());
 
-                path = sadImg;
             }
         }
         moodLabel.setText(currentMood.toString());
-        // Debugging: Print the path and URL
-        System.out.println("Image path: " + path);
-        URL imageUrl = getClass().getClassLoader().getResource(path);
-        if (imageUrl == null) {
-            System.out.println("IMAGE NOT FOUND: " + path);
-        } else {
-            ImageIcon icon = new ImageIcon(imageUrl);
-            System.out.println("Image URL: " + imageUrl.toExternalForm());
-            if (icon.getImageLoadStatus() == MediaTracker.ERRORED) {
-                System.out.println("IMAGE LOAD ERROR");
-            }
-            moodLabel.setIcon(icon);
-        }
-
-
 
     }
 
