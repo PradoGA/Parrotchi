@@ -1,9 +1,8 @@
 package Tasks;
-
 import uiPackage.ActionsGUI;
-
 import java.util.TimerTask;
 
+//Task timer for Mini game quiz
 public class GameTask extends TimerTask {
     private ActionsGUI actionsGUI;
     private int timeLeftInMinutes = 60; // 1 minute = 60 seconds

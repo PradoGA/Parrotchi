@@ -1,10 +1,9 @@
 package Tasks;
-
 import main.Game;
 import main.Tamagotchi;
-
 import java.util.TimerTask;
 
+//Task timer for cuddles
 public class LoveTask extends TimerTask {
     private Tamagotchi pet;
 

@@ -1,7 +1,5 @@
 package minigames;
-
 import com.fasterxml.jackson.databind.ObjectMapper;
-import java.io.File;
 import java.io.InputStream;
 import java.util.Random;
 
@@ -10,10 +8,12 @@ public class GameParser {
     private IrishPhrasesGame irishPhrasesGame;
     private int currentInt;
 
+    // Constructor that initializes the GameParser with a file path
     public GameParser(String filePath) {
         loadPhrases(filePath);
     }
 
+    // Loads phrases from a JSON file located at the given resource path
     private void loadPhrases(String resourcePath) {
         ObjectMapper mapper = new ObjectMapper();
         try (InputStream inputStream = getClass().getClassLoader().getResourceAsStream(resourcePath)) {
@@ -37,6 +37,7 @@ public class GameParser {
         }
     }
 
+    // Returns a random phrase from the loaded phrases
     public String getRandomPhrase() {
         currentInt = 0;
         if (irishPhrasesGame == null ||
@@ -51,9 +52,8 @@ public class GameParser {
         return irishPhrasesGame.getPhrases()[randomIndex].getPhrase();
     }
 
-    public String getRandomAnswer()
-    {
+    // Returns the answer corresponding to the last retrieved phrase
+    public String getRandomAnswer() {
         return irishPhrasesGame.getPhrases()[currentInt].getAnswer();
-
     }
 }

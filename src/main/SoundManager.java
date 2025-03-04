@@ -1,5 +1,4 @@
 package main;
-
 import javax.sound.sampled.*;
 import java.io.BufferedInputStream;
 import java.io.IOException;
@@ -7,7 +6,7 @@ import java.io.InputStream;
 
 public class SoundManager {
 
-    // Sound Effects
+    // Paths to sound effect files
     final private String BUTTON_SOUND_PATH = "sounds/buttonSound.wav";
     final private String HELLO_SOUND_PATH = "sounds/helloSound.wav";
     final private String PARROT_SOUND_PATH = "sounds/parrotSound.wav";
@@ -21,19 +20,20 @@ public class SoundManager {
     final private String NOTIFICATION_SOUND_PATH = "sounds/notificationSound.wav";
     final private String THANK_SOUND_PATH = "sounds/thankyouSound.wav";
 
-
-    // Background music
+    // Paths to background music files
     final private String RELAXING_LOOP_PATH = "sounds/relaxingLoop.wav";
     final private String HAPPY_LOOP_PATH = "sounds/happyLoop.wav";
-    private Clip clip;
-    private int backgroundVolume = -5;
-    private final static SoundManager SOUND_MANAGER_INSTANCE = new SoundManager();
-    boolean canPlaySounds = true;
+    private Clip clip;  // Clip to play sounds
+    private int backgroundVolume = -5;  // Volume level for background music
+    private final static SoundManager SOUND_MANAGER_INSTANCE = new SoundManager();  // Singleton instance
+    boolean canPlaySounds = true;  // Flag to check if sounds can be played
 
+    // Singleton pattern to get the single instance of SoundManager
     public static SoundManager getSoundManagerInstance() {
         return SOUND_MANAGER_INSTANCE;
     }
 
+    // Plays a sound from the given file path
     private void playSound(String soundPath) {
         if (!canItPlaySounds()) {
             return;
@@ -52,17 +52,16 @@ public class SoundManager {
         }
     }
 
+    // Public methods to play specific sound effects
     public void playButtonSound() {
         playSound(BUTTON_SOUND_PATH);
     }
 
-    public void playNotificationSound()
-    {
+    public void playNotificationSound() {
         playSound(NOTIFICATION_SOUND_PATH);
     }
 
-    public void playThankYouSound()
-    {
+    public void playThankYouSound() {
         playSound(THANK_SOUND_PATH);
     }
 
@@ -102,10 +101,12 @@ public class SoundManager {
         playSound(PARROT_SOUND_PATH);
     }
 
+    // Plays the default relaxing background music
     public void playBackgroundMusic() {
         playLoopingSound(RELAXING_LOOP_PATH);
     }
 
+    // Changes the background music based on the given value
     public void changeBackgroundMusic(Boolean value) {
         if (clip.isRunning()) {
             clip.stop();
@@ -117,6 +118,7 @@ public class SoundManager {
         }
     }
 
+    // Toggles the background music on and off
     public void toggleBackgroundMusic() {
         if (clip == null) {
             return;
@@ -128,15 +130,18 @@ public class SoundManager {
         }
     }
 
+    // Checks if sounds can be played
     public boolean canItPlaySounds() {
         return canPlaySounds;
     }
 
+    // Toggles the ability to play sounds on and off
     public void toggleCanPlaySounds() {
         canPlaySounds = !canPlaySounds;
         System.out.println(canPlaySounds ? "Sounds On" : "Sounds Off");
     }
 
+    // Plays a sound in a loop from the given file path
     private void playLoopingSound(String soundPath) {
         try (InputStream audioSrc = getClass().getClassLoader().getResourceAsStream(soundPath);
              BufferedInputStream bufferedIn = new BufferedInputStream(audioSrc)) {

@@ -1,7 +1,7 @@
 package minigames;
-
 import java.util.regex.*;
 
+// class that extract the red text from  the given text
 public class ExtractRedText {
     public String extractText(String html){
 
